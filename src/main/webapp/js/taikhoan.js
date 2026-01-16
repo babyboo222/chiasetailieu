@@ -26,11 +26,11 @@ async function dangKy() {
     if(response.status < 300){
         swal({
             title: "Thông báo", 
-            text: "đăng ký thành công! hãy check email của bạn!", 
+            text: "đăng ký thành công!",
             type: "success"
           },
         function(){ 
-            window.location.href = 'xacthuc?email='+result.email
+            window.location.href = 'login'
         });
     }
     if(response.status == exceptionCode){
