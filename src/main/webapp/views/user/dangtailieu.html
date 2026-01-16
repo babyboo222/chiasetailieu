@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+    <link  rel="stylesheet" href="css/style.css" />
+    <script src="js/menu.js"></script>
+    <script src="js/tailieu.js"></script>
+    <title>Đăng tài liệu</title>
+    <script>
+        window.onload = function(){
+            loadMenu();
+            loadMenuTrai();
+            // loadDanhMuc("TAI_LIEU");
+            loadChiTietTaiLieu();
+            checkroleUser();
+        }
+    </script>
+</head>
+<body>
+    <nav id="menus" class="navbar navbar-expand-lg"></nav>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-2 danhmuctrai" id="danhmuctrai">
+                
+            </div>
+            <div class="col-md-12 content-main">
+                <div class="row">
+                    <div class="col-md-8 danhsachmain">
+                        <div class="headermain">
+                            <h3>Tải tài liệu lên</h3>
+                        </div>
+                        <div class="row thongtindangtai">
+                            <div class="col-sm-3">
+                               <div class="row">
+                                    <div class="col-6 col-md-12 col-lg-12">
+                                        <button onclick="document.getElementById('fileanhdaidientl').click(); return false;" class="btnchonanh" style="background-image: url('image/backluuanh.png');">
+                                            <i class="fa fa-camera camera"></i><br><span class="tieudetaianhdd">Tải ảnh đại diện</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-6 col-md-12 col-lg-12">
+                                        <img id="imgpreviewtl" class="imgpreviewtl">
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="file" id="fileanhdaidientl" style="display: none;">
+                                <label class="labeltailieu">Tên tài liệu <span class="batbuoc">(*)</span></label>
+                                <input id="name" class="form-control" placeholder="Tiêu đề phải dài hơn 20 ký tự">
+
+                                <label class="labeltailieu">Danh mục <span class="batbuoc">(*)</span></label>
+                                <select id="listdm" class="form-control" multiple>
+                                    <option>Kỹ năng mềm</option>
+                                </select>
+
+                                <label class="labeltailieu">File đính kèm <span>(chọn nhiều file)</span></label>
+                                <input id="dsfile" class="form-control" type="file" multiple>
+
+                                <div class="listfiledadang" id="listfiledadang" style="display: none;">
+                                    <span>Tài liệu đã thêm</span>
+                                    <ul class="dstldadang" id="dstldadang">
+                                        <!-- <li><a href="">File 1.pdf</a> <i class="fa fa-remove rmtailieu"></i></li>
+                                        <li><a href="">File 1.pdf</a> <i class="fa fa-remove rmtailieu"></i></li>
+                                        <li><a href="">File 1.pdf</a> <i class="fa fa-remove rmtailieu"></i></li> -->
+                                    </ul>
+                                </div>
+
+                                <label class="labeltailieu">Mô tả <span class="batbuoc">(*)</span></label>
+                                <textarea id="editor" placeholder="Để có thứ hạng cao tại kết quả tìm kiếm" name="content"></textarea>
+                                <br><div class="loading" id="loading">
+                                    <div class="bar1 bar"></div>
+                                </div><br>
+                                <button onclick="taiTaiLieu()" class="form-control btn btn-primary">Tải lên</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-main-right">
+                            <div class="popupStatic_content">
+                            <p dir="ltr" style="margin-top:0pt;margin-bottom:0pt;text-align:center;"><span style="line-height:21.6000003814697px;"><span style="font-size:24px;"><b><br>
+                            Các tài liệu cấm đăng tải trên website</b><br>
+                            </span><br>
+                            </span></p>
+                            <p style="padding:7px 0px;color:#555555;font-family:monda, sans-serif;font-size:13px;line-height:23px;"><strong style="line-height:1.5;">a. Tài Liệu tuyệt mật</strong></p>
+                            <p style="padding:7px 0px;color:#555555;font-family:monda, sans-serif;font-size:13px;line-height:23px;">Tài Liệu chiến lược an ninh quốc gia; kế hoạch phòng thủ đất nước; kế hoạch động viên đối phó với chiến tranh; các loại vũ khí, phương tiện có ý nghĩa quyết định khả năng phòng thủ đất nước;</p>
+                            <ul style="padding:9px 40px;color:#555555;font-family:monda, sans-serif;font-size:13px;line-height:23px;"><li>Các chủ trương, chính sách về đối nội, đối ngoại của Đảng Cộng sản Việt Nam và Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam không công bố hoặc chưa công bố.</li>
+                            <li>Những tin của nước ngoài hoặc của tổ chức quốc tế chuyển giao cho Việt Nam mà Chính phủ xác định thuộc độ Tuyệt Mật;</li>
+                            <li>Tổ chức và hoạt động tình báo, phản gián do Chính Phủ quy định;</li>
+                            <li>Mật mã quốc gia;</li>
+                            <li>Dự trữ chiến lược quốc gia; các số liệu dự toán, quyết toán ngân sách nhà nước về những lĩnh vực chưa công bố; kế hoạch phát hành tiền, khóa an toàn của từng mẫu tiền và các loại giấy tờ có giá trị như tiền; phương án, kế hoạch thu đổi tiền chưa công bố;</li>
+                            <li>Khu vực, địa điểm cấm; tin, Tài Liệu khác mà Chính phủ xác định thuộc độ Tuyệt mật.</li>
+                            </ul>
+                            <p style="padding:7px 0px;color:#555555;font-family:monda, sans-serif;font-size:13px;line-height:23px;"><strong style="line-height:1.5;">b. Tài Liệu tối mật</strong></p>
+                            <p style="padding:7px 0px;color:#555555;font-family:monda, sans-serif;font-size:13px;line-height:23px;">Các cuộc đàm phán và tiếp xúc cấp cao giữa nước ta với nước ngoài hoặc các tổ chức quốc tế về chính trị, quốc phòng, an ninh, đối ngoại, kinh tế, khoa học, công nghệ và các lĩnh vực khác chưa công bố.</p>
+                            <ul style="padding:9px 40px;color:#555555;font-family:monda, sans-serif;font-size:13px;line-height:23px;"><li>Những tin của nước ngoài hoặc của các tổ chức quốc tế chuyển giao cho Việt Nam mà Chính phủ xác định thuộc độ Tối mật;</li>
+                            <li>Tổ chức hoạt động, trang bị, phương án tác chiến của các đơn vị vũ trang nhân dân, trừ tổ chức và hoạt động được quy định tại khoản 3 Điều 5 của Pháp lệnh; phương án sản xuất, vận chuyển và cất giữ vũ khí; công trình quan trọng phòng thủ biên giới, vùng trời, vùng biển, hải đảo;</li>
+                            <li>Bản đồ quân sự; tọa độ điểm hạng I, hạng II nhà nước của mạng lưới quốc gia hoàn chỉnh cùng với các ghi chú điểm kèm theo.</li>
+                            <li>Vị trí và trị số độ cao các mốc chính của các trạm khí tượng, thủy văn, hải văn; số liệu độ cao và số không tuyệt đối của các mốc hải văn;</li>
+                            <li>Số lượng tiền in, phát hành; tiền dự trữ bằng đồng Việt Nam và ngoại tệ; các số liệu về bội chi, lạm phát tiền mặt chưa công bố; phương án giá các mặt hàng chiến lược thuộc Nhà nước quản lý chưa công bố;</li>
+                            <li>Nơi lưu giữ và số lượng kim loại quý hiếm, đá quý, ngoại hối và vật quý hiếm khác của Nhà nước;</li>
+                            <li>Công trình khoa học, phát minh, sáng chế, giải pháp hữu ích, bí quyết nghề nghiệp đặc biệt quan trọng đối với quốc phòng, an ninh, kinh tế, khoa học, công nghệ mà Nhà nước chưa công bố;</li>
+                            <li>Kế hoạch xuất khẩu, nhập khẩu các mặt hàng đặc biệt giữ vị trí trọng yếu trong việc phát triển và bảo vệ đất nước không công bố hoặc chưa công bố;</li>
+                            </ul>
+                            <p style="padding:7px 0px;color:#555555;font-family:monda, sans-serif;font-size:13px;line-height:23px;"><strong style="line-height:1.5;">c. Tài Liệu không được duyệt theo quy định của website 123doc.org:</strong></p>
+                            <ul style="padding:9px 40px;color:#555555;font-family:monda, sans-serif;font-size:13px;line-height:23px;"><li>Tài Liệu không là nguyên gốc, cắt xén 1 vài trang đầu hoặc cuối.</li>
+                            <li>Tài Liệu không phải là tiếng Anh, tiếng Việt.</li>
+                            <li>Các thông tư, nghị định, văn bản pháp luật của Nhà nước.</li>
+                            <li>Tài Liệu thuộc các thể loại truyện tranh, truyện ngắn và truyện dài, truyện dịch, truyện cười.</li>
+                            <li>Tài Liệu thuộc thể loại báo chí, ngoại trừ thể loại nghiên cứu tham khảo.</li>
+                            <li>Tài Liệu cắt nhỏ theo từng phần hoặc đã tồn tại trên 123doc.org nhưng nội dung trong Tài Liệu bị xáo trộn.</li>
+                            <li>Cách trình bày trong Tài Liệu lộn xộn, thông tin Tài Liệu không mang lại giá trị cho người dùng.</li>
+                            <li>Các đề thi riêng lẻ từ 1 tới 2 trang, đề thi chỉ có đáp án không có câu hỏi, các bìa tiểu luận có 1 tới 2 trang.</li>
+                            <li>Tài Liệu tính năng in bài trên trình duyệt để scan.</li>
+                            <li>Tài Liệu được định dạng chụp ảnh và copy trực tiếp lên word.</li>
+                            <li>Tài Liệu là danh sách thống kế 1 danh sách các Tài Liệu và được upload dưới dạng danh sách + file đính kèm.</li>
+                            <li>Tài Liệu tiếng Anh thuộc lĩnh vực Y tế – Sinh học.</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tiny.cloud/1/iu5zmzbokawdbnc7bsl2gynbnbnuzwi1p9tqzbm614zsa3ht/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        // window.onbeforeunload = function(){
+        //     return '?';
+        // };
+        fileanhdaidientl.onchange = evt => {
+            const [file] = fileanhdaidientl.files
+            if (file) {
+                imgpreviewtl.src = URL.createObjectURL(file)
+            }
+        }
+        tinymce.init({
+            selector : 'textarea#editor',
+        });
+
+    </script>
+</body>
+</html>

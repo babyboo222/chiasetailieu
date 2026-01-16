@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link  rel="stylesheet" href="css/style.css" />
+    <script src="js/menu.js"></script>
+    <script src="js/tailieu.js"></script>
+    <title>trang-chủ</title>
+    <script>
+        window.onload = function(){
+            loadMenu();
+            loadMenuTrai();
+            loadChiTietTaiLieuPublic();
+            // taiLieuLienQuan();
+        }
+    </script>
+</head>
+<body>
+    <nav id="menus" class="navbar navbar-expand-lg"></nav>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-2 danhmuctrai" id="danhmuctrai">
+                
+            </div>
+            <div class="col-md-12 content-main">
+                <div class="row">
+                    <div class="col-md-8 danhsachmain">
+                        <div class="listcauhoi">
+                            <h3 id="name">69 đề thi trắc nhiệm khách quan vật lý đại học kèm đáp án mới nhất 2015 (miễn phí)</h3>
+                            <span>Ngày đăng: <span id="ngaydang">18-04-2023</span></span>
+                            <button data-bs-toggle="modal" data-bs-target="#themdanhmuc" class="btntaixuong">Tải xuống</button>
+                            <div>
+                                <div class="nguoidang">
+                                    <img class="imgnguoidang" src="image/nguoidang.png" id="imgnguoidang">
+                                    <div class="ttnguoidang">
+                                        <span class="userdang" id="userdang">user đăng</span><br>
+                                        <span><i class="fa fa-file-archive icds"></i><span class="solus" id="soluongfile"> 2</span></span>
+                                        <span><i class="fa fa-eye icds"></i><span class="solus" id="numview"> 2</span></span>
+                                        <span><i class="fa fa-download icds"></i><span class="solus" id="numberdownload"> 2</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="noidungtailieu" id="noidungtailieu">
+                                Ngày đăng: 11/08/2014, 13:25 69 đề thi trắc nhiệm khách quan vật lý đại học kèm đáp án mới nhất 2015 trắc nhiệm khách quan vật lý giải nhanh vật lý bằng máy tính casio fx570es ôn thi vật lý 2015 tuyển tập trắc nhiệm lý thuyết lý 2015 đề thi thử đại học môn lý 2015 69 đề thi trắc nhiệm khách quan vật lý đại học kèm đáp án mới nhất 2015 trắc nhiệm khách quan vật lý giải nhanh vật lý bằng máy tính casio fx570es
+                            </div>
+                            <span id="clxemthem" onclick="moRongXemThem()" class="poiter blue">Xem thêm</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-main-right">
+                            <p>TÀI LIỆU CÙNG BỘ</p>
+                            <div class="listtailieudikem">
+                                <ul class="ullisttailieudikem" id="ullisttailieudikem">
+                                    <li><a href="OCA.pdf" download="download">Đề thi thử đại học số 9.pdf</a></li>
+                                    <li><a href="">Đề thi thử đại học số 10.pdf</a></li>
+                                    <li><a href="">Đề thi thử đại học số 11.pdf</a></li>
+                                    <li><a href="">Đề thi thử đại học số 12.pdf</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="content-main-right">
+                            <p>TÀI LIỆU LIÊN QUAN</p>
+                            <div class="listtailieulq" id="listtailieulq">
+                                <div class="singletllq">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <i class="fa fa-file-pdf-o"></i>
+                                        </div>
+                                        <div class="col-11">
+                                            <a href="" class="tenfilelq">69 đề thi trắc nhiệm khách quan vật lý đại học kèm đáp án</a>
+                                            <div class="d-flex">
+                                                <span><i class="fa fa-file-archive icds"></i><span class="solu"> 2</span></span>
+                                                <span><i class="fa fa-eye icds"></i><span class="solu"> 2</span></span>
+                                                <span><i class="fa fa-download icds"></i><span class="solu"> 2</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="singletllq">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <i class="fa fa-file-pdf-o"></i>
+                                        </div>
+                                        <div class="col-11">
+                                            <a href="" class="tenfilelq">69 đề thi trắc nhiệm khách quan vật lý đại học kèm đáp án</a>
+                                            <div class="d-flex">
+                                                <span><i class="fa fa-file-archive icds"></i><span class="solu"> 2</span></span>
+                                                <span><i class="fa fa-eye icds"></i><span class="solu"> 2</span></span>
+                                                <span><i class="fa fa-download icds"></i><span class="solu"> 2</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="modal" id="themdanhmuc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">Danh sách file</h5> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body">
+                <ul class="ullisttailieudikem ultailieupre" id="ultailieupre">
+                    <li><a href=""><i class="fa fa-download"></i> Đề thi thử đại học số 10.pdf</a></li>
+                    <li><a href=""><i class="fa fa-download"></i> Đề thi thử đại học số 10.pdf</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+<script>
+    var ck = 1;
+    function moRongXemThem(){
+        if(ck % 2 != 0){
+            document.getElementById("noidungtailieu").style.height = 'auto'
+            document.getElementById("clxemthem").innerText = 'Thu gọn'
+        }
+        else{
+            document.getElementById("noidungtailieu").style.height = '100px'
+            document.getElementById("clxemthem").innerText = 'Mở rộng'
+        }
+        ++ck;
+    }
+</script>
+</html>

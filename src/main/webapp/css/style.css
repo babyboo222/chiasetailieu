@@ -1,0 +1,1325 @@
+
+
+#menus{
+    background-color: #fff;
+    box-shadow: 0 3px 2px -2px gray;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    min-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tieudelogo{
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+.fontst{
+    line-height: 70px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+.img-top{
+    margin-top: -15px;
+}
+.logo-menu{
+    text-decoration: none;
+}
+.poiter{
+    cursor: pointer;
+    text-decoration: none;
+}
+.item-menu{
+    color: #000;
+    text-decoration: none;
+    line-height: 60px;
+}
+#morongnoidung{
+    margin-left: 2em;
+}
+.logoname{
+    font-size: 20px;
+}
+.s_search{
+    border: 1px solid hsl(210,8%,75%);;
+    height: 36px;
+    display: inline-block;
+    width: 50%;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.search-menu{
+    border: none;
+    outline: none;
+}
+
+.chonloaiTk{
+    float: right;
+    border: none;
+    outline: none;
+}
+.imgmenu{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.texts{
+    text-decoration: none;
+    color: #000;
+}
+.img-cart{
+    width: 80px;
+}
+.noidungchinh img{
+    max-width: 100% !important;
+    height: auto;
+}
+.usermenuinfor{
+    margin-right: 10px;
+}
+.btnmenu{
+    margin-left: 10px;
+    border: none;
+    height: 30px;
+}
+.li-drop{
+    border-top: 1px solid gray;
+}
+.li-drop:first{
+    border-top: none;
+}
+#dflex{
+    width: 20%;
+}
+#navchinh{
+    width: 80%;
+    padding-left: 30px;
+}
+.content-main{
+    padding-left: 18%;
+}
+
+.content{
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu-left{
+    color: #000;
+    text-decoration: none;
+    line-height: 40px;
+}
+.danhmuctrai{
+    padding-top: 70px;
+    padding-left: 20px;
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    z-index: 100;
+}
+.publict{
+    font-size: 0.7rem;
+    margin-top: 15px;
+}
+.listmenu-left{
+    padding-top: 0px;
+    margin-top: -10px;
+}
+.bto{
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    border-radius: 4px;
+}
+.btnuploadbt{
+    background-color: hsl(27,90%,55%);
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+}
+.btnuploadbt-top{
+    background-color: hsl(27,90%,55%);
+    border: none;
+    color: #fff;
+    height: 36px;
+    border-radius: 5px;
+}
+.mnleft{
+    margin-left: 25px;
+}
+
+.khoahocright{
+    font-size: 0.9rem;
+}
+
+.content-main-right{
+    background-color: #f0f0f0;
+    border: 1px solid #c4c4c4;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+#list-course-right{
+    padding-bottom: 30px;
+}
+.linkcourse{
+    text-decoration: none;
+    color: #000;
+}
+.single-course{
+    border-bottom: 1px solid #c4c4c4;
+    text-decoration: none;
+}
+.imgcourse{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.mota-couse{
+    line-height: 18px;
+    font-size: 0.9rem;
+}
+.date-course{
+    font-size: 0.8rem;
+    color: #aaa;
+    float: right;
+}
+.name-couse{
+    color: #50ba18;
+    text-transform: uppercase;
+}
+.price-course{
+    color: red;
+}
+
+.danhsachmain{
+    padding-top: 20px;
+}
+
+.headermain{
+    display: flex;
+}
+
+.btntaoch{
+    margin-left: auto;
+    font-size: 0.9rem;
+}
+.phanloaibv {
+    margin-top: 20px;
+    border: 1px solid #b5b5b5;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+}
+
+.loaibvheader{
+    width: 33.33%;
+    color: #000;
+    text-decoration: none;
+    border-right: 1px solid #b5b5b5;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    height: 38px;
+}
+.loaibvheader:last-child{
+    border-right: 0px solid #b5b5b5;
+}
+
+
+.listcauhoi{
+    margin-top: 30px;
+}
+.singlecauhoi{
+    border-top: 1px solid #b5b5b5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.listthongsoch{
+    float: right;
+    padding-top: 10px;
+}
+.thongsoch{
+    line-height: 12px;
+    font-size: 0.9em;
+}
+.imguserch{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.tieudech{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.listtag{
+    margin-top: 5px;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 1; /* number of lines to show */
+           line-clamp: 1; 
+   -webkit-box-orient: vertical;
+}
+.tagcauhoi{
+    text-decoration: none;
+    font-size: 0.8rem;
+    background-color: #e1ecf4;
+    padding: 3px 5px 3px 5px;
+    border-radius: 3px;
+    /* display: inline-block; */
+    margin-top: 5px;
+}
+.nguoidangch{
+    justify-content: flex-end;
+    margin-left: auto;
+    float: right;
+}
+.tenuserdangch{
+    text-decoration: none;
+    font-size: 0.85em;
+}
+.thoigiandangch{
+    color: #8a8d91;
+    font-size: 0.85em;
+}
+.motach{
+    color: #8a8d91;
+    font-size: 0.85rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.motach img{
+    display: none;
+}
+
+.tieudechct{
+    font-size: 1.7rem;
+    line-height: 1.35;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+.btntaochct{
+    margin-top: 2rem;
+    float: right;
+}
+.timechitiet{
+    border-bottom: 1px solid #d1d1d1;
+}
+.timechct{
+    font-size: 0.9rem;
+}
+.viewchct{
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+
+.likect{
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.unlinect{
+    margin-left: 20px;
+}
+.likect.active{
+    color: blue;
+}
+.luuch{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.danhsachmain.mainchct{
+    padding-bottom: 200px;
+}
+.cautraloict{
+    margin-top: 30px;
+}
+.sapxeptheoct{
+    margin-left: auto;
+}
+.soluongctl{
+    font-size: 1.1rem;
+}
+.sxtheo{
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+.loaisxp{
+    height: 25px;
+}
+.btnlikectl{
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+.soluonglikectl{
+    font-weight: bold;
+    line-height: 30px;
+}
+.nguoidangctl{
+    margin-bottom: 10px;
+}
+.avtuserdangctl{
+    width: 30px;
+}
+.usernamedangctl{
+    margin-left: 5px;
+    color: blue;
+}
+.ngaytraloi{
+    /* margin-left: auto; */
+    margin-left: 20px;
+    color: gray;
+}
+.slcautl{
+    color: blue;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.replaybinhluan{
+    margin-left: 10%;
+    margin-top: 15px;
+}
+.avtuserrepl{
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    margin-right: 5px;
+}
+.usernamerepl{
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+.ngaytraloispl{
+    margin-right: 10px;
+    font-size: 0.9rem;
+    color: gray;
+}
+.xoactlsp{
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: gray;
+}
+.contentreplay{
+    font-size: 1rem;
+}
+.traloirpl{
+    cursor: pointer;
+    color: blue;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+.singlereplay{
+    margin-top: 25px;
+}
+.singlectlct{
+    margin-top: 40px;
+}
+.traloivt{
+    text-decoration: none;
+}
+.loaitailieujloc{
+    margin-top: 20px;
+}
+.radio-custom {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-custom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-custom:hover input ~ .checkmark {
+    background-color: #828282;
+}
+.radio-custom input ~ .checkmark{
+    background-color: #828282;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-custom input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-custom input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-custom .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.loaihinh{
+    margin-top: 20px;
+}
+.loaihinh .radio-custom{
+    margin-right: 20px;
+}
+.singletailieu{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px #c9c9c9;
+        box-shadow: 0 0 5px #c9c9c9;
+}
+.imgtl{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.tentailieu{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    overflow: hidden;
+    display: -webkit-box;
+   -webkit-line-clamp: 2; 
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+   margin-top: 5px;
+   min-height: 50px;
+}
+.giaitentl{
+    color: red;
+}
+.usertailieu{
+    text-decoration: none;
+}
+.tstailieu{
+    color: gray;
+    font-size: 0.7rem;
+    margin-left: 10px;
+    margin-right: auto;
+}
+.pageable{
+    margin-top: 20px;
+}
+.singlekhoahoc{
+    margin-top: 30px;
+    -webkit-box-shadow: 0 0 5px #dbdbdb;
+        box-shadow: 0 0 5px #dbdbdb;
+}
+.btncart{
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    height: 30px;
+    background-color: #a435f0;
+    color: #fff;
+}
+.noidungkhview{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.label-menu{
+    font-size: 1.1rem;
+}
+.listbaihoc{
+    padding-left: 0px;
+}
+.ullistbaihoc{
+    list-style: none;
+    padding-left: 10px;
+}
+.ullistbaihoc li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.ullistbaihoc li {
+    margin-top: 10px;
+}
+.iconlock{
+    margin-left: 10px;
+}
+.noidungkh{
+    padding-left: 11%;
+}
+.showdsbaihoc{
+    font-size: 1.1rem;
+    margin-top: 20px;
+    display: none;
+}
+.noidungkhtop{
+    display: none;
+}
+.tenbaihoc{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.uldanhmuckh{
+    list-style: none;
+    padding: 0px;
+    padding-left: 10px;
+}
+.uldanhmuckh a{
+    text-decoration: none;
+    color: gray;
+}
+.uldanhmuckh li{
+    margin-top: 10px;
+}
+.tieudebaitap{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+}
+.divbtrenluyen{
+    padding-left: 10px;
+}
+.tieudexemhd{
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.noidunghd{
+    display: none;
+}
+.btnbaidanhgiakhoahoc{
+    background-color: hsl(27,90%,55%);
+    border: none;
+    color: #fff;
+    height: 36px;
+    border-radius: 5px;
+}
+.listdapdan input{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.listdapdan input, label{
+    cursor: pointer;
+    margin-top: 5px;
+}
+.singlechtn{
+    margin-top: 25px;
+}
+.tench{
+    font-weight: 500;
+}
+.btnguida{
+    margin-top: 30px;
+}
+.dungctl{
+    color: green;
+    font-weight: bold;
+}
+.saictl{
+    color: red;
+    font-weight: bold;
+}
+.ketquatongket{
+    margin-top: 30px;
+}
+.kqlab{
+    font-size: 1.1rem;
+}
+.err{
+    color: red;
+    font-weight: bold;
+}
+.kqlab .suc{
+    font-weight: bold;
+    color: green;
+}
+.ullisttailieudikem{
+    list-style: none;
+}
+.ullisttailieudikem a{
+    text-decoration: none;
+}
+.ullisttailieudikem li{
+    margin-bottom: 15px;
+}
+.icds{
+    /* margin-right: 1px; */
+    color: #aaa;
+    font-weight: 500;
+}
+.solu{
+    margin-right: 20px;
+    color: #aaa;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.tenfilelq{
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.singletllq{
+    margin-top: 20px;
+}
+.btntaixuong{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 150px;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #fa0;
+    border: none;
+}
+.imgnguoidang{
+    width: 60px;
+    height: 60px;
+}
+.ttnguoidang{
+    display: inline-block;
+    margin-top: 10px;
+}
+.userdang{
+    font-size: 0.9rem;
+    color: gray;
+}
+.noidungtailieu{
+    margin-top: 20px;
+    height: 100px;
+    overflow: hidden;
+}
+.thongtindangtai{
+    margin-top: 50px;
+    border-top: 3px solid #ffaa00;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.btnchonanh{
+    /* width: 100%; */
+    border: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.blue{
+    color: blue;
+}
+.camera{
+    font-size: 2rem;
+}
+.imgbackluuanh{
+    width: 100%;
+}
+.tox-notifications-container{
+    display: none;
+}
+.labeltailieu{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.batbuoc{
+    color: red;
+}
+.imgpreviewtl{
+    margin-top: 15px;
+    width: 100%;
+}
+@keyframes barWidth {
+    0%   {width: 0%;}
+    25%  {width: 50%;}
+    50%  {width: 100%;}
+    75%  {width: 50%;}
+    100% {width: 0%;}
+}
+@keyframes barWidth2 {
+    0%   {width: 0%;}
+    50%  {width: 50%;}
+    100% {width: 100%;}
+}
+.loading {
+    margin-top: 20px;
+    height: 4px;
+    width: 100%;
+    display: none;
+}
+  
+.bar {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    margin: 0 auto;
+    animation: barWidth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.bar1 {
+    animation-delay: 0s;
+    background: #ffaa00;
+    top: 0;
+    z-index: 1;
+}
+.listfiledadang{
+    margin-top: 15px;
+}
+.dstldadang{
+    list-style: none;
+}
+.dstldadang li{
+    margin-top: 5px;
+}
+.dstldadang a{
+    text-decoration: none;
+    color: blue;
+}
+.rmtailieu{
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
+.ycw{
+    font-size: 0.8rem
+}
+
+.singleimg{
+    padding-top: 15px;
+}
+.imganhch{
+    width: 100%;
+}
+.loginform{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0 0 5px gray;
+        box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+}
+.tieudedn{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.divinputlogin{
+    padding: 0px 20px 15px 20px;
+}
+.inputlogin{
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.inputlogin:focus{
+    outline: none;
+}
+.quenmk{
+    margin-left: 20px;
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+.divbtnlogin{
+    padding: 0px 20px 15px 20px;
+}
+.btndangnhap{
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.chuacotk{
+    text-align: center;
+}
+.cautraloidiv{
+    margin-top: 50px;
+}
+.tabtk.active{
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.title-taikhoan{
+    margin-top: 20px;
+}
+.profile-detail{
+    background-color: #fbfbfb;
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+}
+.content-profile{
+    background-color: #fff;
+    padding: 20px;
+}
+.chitietthongtintk{
+    -webkit-box-shadow: 0 0 2px #000;
+    box-shadow: 0 0 2px #000;
+    padding: 0;
+}
+.img-tk{
+    aspect-ratio : 1 / 1;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.upload-anh{
+    border: none;
+    margin-right: 200px;
+}
+.box {
+    position: relative;
+    width: 30%;
+ }
+ .box .upload-anh {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    font-size: 12px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+ }
+ .luuthaydoi{
+    background-color: #f54842;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    height: 35px;
+    /* width: 30%; */
+    margin-top: 20px;
+ }
+ .content-profile label{
+    margin-top: 15px;
+ }
+ .profile-detail p{
+    font-size: 14px;
+    line-height: 40px;
+ }
+
+.img-detail{
+    width: 80%;
+    height: auto;
+}
+.name-detail{
+    font-size: 26px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 500;
+}
+.contentab{
+    margin-top: 20px;
+}
+.slcauhoitk{
+    font-size: 1.1rem;
+}
+.listcauhoitk{
+    margin-top: 50px;
+}
+.thongsochtk{
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+.tenchtk{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.tgdangch{
+    color: gray;
+    font-size: 0.9rem;
+}
+.divtgdangchtk{
+    text-align: right;
+}
+.xoacauhoi{
+    color: blue;
+}
+.singlechtk{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.listtailieutk{
+    margin-top: 50px;
+}
+.imgtltk{
+    width: 100%;
+}
+.tentltk{
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.icontltk{
+    font-size: 1.4rem;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #999;
+    cursor: pointer;
+}
+.icontltk{
+    font-size: 1.1rem;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #999;
+    cursor: pointer;
+}
+.icontltk:hover{
+    color: #00a888;
+}
+.ngaydangtltk{
+    color: #999;
+    font-size: 0.9rem;
+}
+.dnahmuctltk{
+    font-size: 11px;
+    display: inline-block;
+    color: #999;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.dnahmuctltk img{
+    display: none;
+}
+.icgv{
+    font-size: .75rem;
+    --text-opacity: 1;
+    color: #a0aec0;
+    margin-bottom: 5px;
+}
+.singletltk{
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.ngaydkikh{
+    font-size: 0.9rem;
+    color: #999;
+}
+.gioithieukh{
+    background-color: #2d2f31;
+    padding: 20px;
+}
+.danhmuckhgt{
+    color: #c0c4fc;
+    font-weight: bold;
+}
+.tenbaihocgt{
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2rem;
+    color: #fff;
+}
+.slhocvien{
+    color: #fff;
+    font-size: 0.9rem;
+}
+.lancapnhatgn{
+    color: #fff;
+    font-size: 0.9rem;
+}
+.icva{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.noidungbhgt{
+    margin-top: 30px;
+    border: 1px solid #999;
+    padding: 20px;
+}
+.tieudendkhgt{
+    margin-top: 20px;
+}
+.giatienkhgt{
+    font-size: 1rem;
+    color: red;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 5px;
+}
+.tablendkhoahoc{
+    background-color: #f7f9fa;
+}
+.tablendkhoahoc tr th{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.btnthemgh{
+    background-color: #a435f0;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    margin-left: 15px;
+}
+.licartmenu{
+    list-style: none;
+    color: #000;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+.licartmenu i {
+    color: #000;
+}
+.soluonggiohang{
+    background-color: #a435f0;
+    border-radius: 50%;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+#title-table-cart tr th{
+    padding: 10px;
+}
+#list-cart tr td{
+    padding: 10px;
+}
+.table-cart{
+    margin-top: 80px;
+}
+.btn-tieptucmuahang{
+    margin-left: 10px;
+    border: 0.5px solid #c4c2c2;
+    height: 40px;
+    background-color: #fffcfc;
+}
+.btn-capnhatgiohang{
+    float: right;
+    height: 40px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+.chitietdathang h5{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-thanhtoandonhang {
+    width: 100%;
+    background-color: #a435f0;
+    color: #fff;
+    height: 40px;
+    border: none;
+    margin-top: 50px;
+}
+.chitietdathang{
+    background-color: #f0eded;
+    margin-top: 10px;
+}
+.sobaigiangcart{
+    color: #999;
+    font-size: 0.9rem;
+}
+.tenkhoahoccart{
+    color: #2d2f31;
+    font-weight: 500;
+    text-decoration: none;
+}
+.giatiencart{
+    color: #5624d0;
+    font-weight: bold;
+}
+.slkhoahoccart{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.tongtiencart{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.lidangnhapmenu{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+.loaibvheader.active{
+    background: hsl(27,90%,55%);
+    color: #fff;
+}
+.xoactlct{
+    color: red;
+}
+
+.contentctlct p{
+    line-height: 80%;
+    font-size: 0.9rem;
+}
+.nguoinhansub{
+    color: blue;
+    cursor: pointer;
+    display: inline;
+}
+.cds > :first-child{
+    display: inline;
+}
+
+.tagchin{
+    font-size: 0.7rem;
+}
+.ultailieupre a{
+    font-size: 1.1rem;
+}
+#ullistbaihocphu{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .s_search{
+        min-width: 100%;
+        margin: 0px;
+        padding-top: 2px;
+    }
+    .s_search input{
+        width: 60%;
+    }
+    .s_search select{
+        width: 20%;
+    }
+    .s_search i{
+        width: 10%;
+    }
+    #dflex{
+        width: 100%;
+    }
+    #navchinh{
+        width: 100%;
+        padding-left: 5px;
+    }
+    #menus{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .content{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .danhmuctrai{
+        display: none;
+    }
+    .content-main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .content-main-right{
+        margin-left: 0px;
+    }
+    .listthongsoch{
+        float: left;
+        display: flex;
+    }
+    .thongsoch{
+        margin-right: 10px;
+    }
+    .modelreplay{
+        position:fixed;
+        bottom:0px;
+        margin:auto;
+        width: 100%;
+    }
+    .showdsbaihoc{
+        display: block;
+    }
+    .noidungkh{
+        padding-left: 10px;
+    }
+    .noidungkhtop{
+        display: block;
+    }
+    .tieudetaianhdd{
+        font-size: 0.8rem;
+    }
+    .btnchonanh{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .camera{
+        font-size: 1.2rem;
+    }
+    .box{
+        width: 50%;
+    }
+    .box .upload-anh{
+        font-size:10px;
+    }
+    .contentctlct p{
+        line-height: 80%;
+        margin-top: -5px;
+    }
+    .imgtl{
+        height: auto;
+    }
+    .search-menu{
+        
+    }
+}
